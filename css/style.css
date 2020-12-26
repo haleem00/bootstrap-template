@@ -1,0 +1,510 @@
+
+:root {
+    --main-color : #E41B17
+}
+
+/* start overwriting bootstrap */
+
+.grid {
+    background-color: teal;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+/*main navbar*/
+.navbar {
+    min-height:70px ;
+    padding: 0;
+} 
+
+/*logo brand*/
+.navbar-brand {
+    font-size: 1.70rem;
+    padding-top: 0.7rem;
+    padding-bottom: 1.7rem;
+}
+.navbar-brand span{
+    color: var(--main-color);
+}
+
+/*nav menu */ 
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active {
+    background-color: var(--main-color);
+    color: rgba(255, 255, 255, 0.55);
+    padding: 12px 31px;
+}
+.nav-link {
+    padding: 12px 31px;
+}
+
+.navbar-collapse {
+    height: 70px;
+}
+.navbar-nav {
+    height: 100%;
+    line-height: 3.4;
+}
+
+/*navbar responsive */
+.navbar-collapse {
+    height: auto;
+}
+
+
+/*dropdown menu */
+.dropdown-menu {
+    background-color: #212529;
+    padding: 0 20px;
+    border-top: 1px solid var(--main-color);
+    top: 97%;
+    left: -77px;
+    min-width: 200px;
+}
+.dropdown-item {
+    color: rgba(255, 255, 255, 0.55);
+    padding: 0px 1rem;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    color:  rgba(255, 255, 255, 0.75);
+    background-color: transparent;
+}
+.dropdown-menu li:hover {
+    padding-left: 10px;
+    transition: padding .5s ease;
+    -webkit-transition: padding .5s ease;
+    -moz-transition: padding .5s ease;
+    -ms-transition: padding .5s ease;
+    -o-transition: padding .5s ease;
+    
+}
+.dropdown-menu hr {
+    background-color: var(--main-color);
+    opacity: 1;
+}
+
+/* end overwriting bootstrap */
+
+/* start about */
+.about {
+    padding: 50px 0;
+}
+.about h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.about h1 span {
+color: var(--main-color);
+}
+.about p {
+    color: #212529;
+}
+/* end about */
+
+/* start feature */
+
+.feature {
+    padding: 50px 0;
+    background-color: #DDD;
+}
+.feature .feat {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.feature .feat svg {
+    margin-bottom: 20px;
+}
+.feature .feat h3 {
+    margin-bottom: 20px;
+}
+
+/* end feature */
+
+/* start testimonial */
+.testimonials {
+    padding: 50px 0;
+
+}
+.testimonials h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.testimonials .carousel-inner {
+    padding: 0 130px;
+}
+.testimonials h3 {
+    color: var(--main-color);
+}
+
+.testimonials .carousel-indicators {
+    position: static;
+}
+
+.testimonials .carousel-indicators li{
+    width: 80px;
+    height: 80px;
+    text-indent: 0;
+    margin: 20px 5px 5px 5px;
+    border:3px solid #FFF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    overflow: hidden;
+} 
+.testimonials .carousel-indicators li.active{
+    width: 80px;
+    height: 80px;
+    border:3px solid var(--main-color);
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+} 
+.testimonials .carousel-indicators li img {
+    max-width: 100%;
+}
+/* end testimonial */
+
+/* start price part  */
+.price {
+    padding: 50px 0;
+    background-color: #DDD;
+}
+.price h2 {
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+.price .price-table {
+    background-color: #FFF;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+.price .price-table h3 {
+font-weight: bold;
+margin-bottom: 15px;
+}
+.price .price-table p {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    background-color: #DDD;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: auto;
+    font-weight: bold;
+    font-size: 25px;
+    color: #666;
+
+}
+.price .price-table:hover p {
+    transform: scale(1.1) rotate(360deg);
+    -webkit-transform: scale(1.1) rotate(360deg);
+    -moz-transform: scale(1.1) rotate(360deg);
+    -ms-transform: scale(1.1) rotate(360deg);
+    -o-transform: scale(1.1) rotate(360deg);
+    transition: all .7s ease;
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    -ms-transition: all .7s ease;
+    -o-transition: all .7s ease;
+}
+.price .price-table ul li {
+    line-height: 45px;
+    font-size: 18px;
+}
+/* end price part  */
+
+/* start team part */
+.team {
+
+background-image: url(../images/alphatestersanimation60-1.gif);
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+min-height: 600px;
+}
+
+.team .team-info {
+    padding: 50px 0;
+    color: #Fff;
+    background-color: rgba(2, 2, 2, .7);
+    width: 100%;
+    min-height: 600px;
+}
+.team .team-info h2 {
+    margin-bottom: 60px;
+}
+.team .team-info .person {
+    margin-bottom: 25px;
+}
+.team .team-info .person img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.team .team-info .person h3 {
+    margin: 20px 0;
+}
+.team .team-info .person .icon a {
+    color: #FFF;
+    text-decoration: none;
+    margin-left: 5px;
+}
+/* end team part */
+
+/* start subscribe */
+
+.subscribe {
+    padding: 50px 0;
+    background-color: #DDD;
+}
+.subscribe .input-group {
+    width: 60%;
+    margin: auto;
+}
+.subscribe .form-control {
+    font-size: 20px;
+}
+
+/* end subscribe */
+
+/* start statistic */
+
+.statistic {
+    background: url("../images/stat.jpg") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 300px;
+}
+.statistic .stat {
+    background-color: rgba(2, 2, 2, .7);
+    min-height: 300px;
+    color: #b6b5b5;
+    padding: 50px 0; 
+}
+
+.statistic .stat h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.statistic .stat .stat-box {
+    margin-bottom: 30px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    cursor: pointer;
+}
+.statistic .stat .stat-box:hover {
+color: #FFF;
+}
+.statistic .stat p {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.statistic .stat span {
+    font-size: 20px;
+}
+/* end statistic */
+
+
+/* start skill progress */
+
+.skills {
+    padding: 50px 0;
+}
+.skills h2 {
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.skills .skill-progress  .progress-box {
+    margin-bottom: 10px;
+}
+
+/* end skill progress */
+
+/* start contact */
+
+.contact {
+    background: url("../images/contact.jpg") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 300px;
+}
+
+.field {
+    background-color: rgba(2, 2, 2, .7);
+    min-height: 300px;
+    color: #b6b5b5;
+    padding: 50px 0; 
+}
+.field h2{
+font-weight: bold;
+}
+.field p{
+margin-bottom: 25px;
+}
+.field textarea {
+    height: 111px;
+    resize: none;
+}
+
+/* end contact */
+
+/* start footer */
+footer .copyright {
+    background-color: #131518;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 18px;
+}
+footer .copyright span {
+    color: var(--main-color);
+}
+
+/* end footer */
+
+/* start media Query */
+
+@media (max-width :991px) {
+    .navbar-nav {
+        line-height: 1.4;
+    }
+    .navbar-nav .nav-link {
+        padding-left: 28px;
+    }
+    .dropdown-item {
+        margin-bottom: 5px;
+    }
+    
+}
+
+/* end media Query */
+
+
+/* sart hover css  */
+@-webkit-keyframes hvr-pulse-grow {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  @keyframes hvr-pulse-grow {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  .hvr-pulse-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
+    -webkit-animation-name: hvr-pulse-grow;
+    animation-name: hvr-pulse-grow;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+  }
+
+
+
+  /* Wobble Bottom */
+@-webkit-keyframes hvr-wobble-bottom {
+    16.65% {
+      -webkit-transform: skew(-12deg);
+      transform: skew(-12deg);
+    }
+    33.3% {
+      -webkit-transform: skew(10deg);
+      transform: skew(10deg);
+    }
+    49.95% {
+      -webkit-transform: skew(-6deg);
+      transform: skew(-6deg);
+    }
+    66.6% {
+      -webkit-transform: skew(4deg);
+      transform: skew(4deg);
+    }
+    83.25% {
+      -webkit-transform: skew(-2deg);
+      transform: skew(-2deg);
+    }
+    100% {
+      -webkit-transform: skew(0);
+      transform: skew(0);
+    }
+  }
+  @keyframes hvr-wobble-bottom {
+    16.65% {
+      -webkit-transform: skew(-12deg);
+      transform: skew(-12deg);
+    }
+    33.3% {
+      -webkit-transform: skew(10deg);
+      transform: skew(10deg);
+    }
+    49.95% {
+      -webkit-transform: skew(-6deg);
+      transform: skew(-6deg);
+    }
+    66.6% {
+      -webkit-transform: skew(4deg);
+      transform: skew(4deg);
+    }
+    83.25% {
+      -webkit-transform: skew(-2deg);
+      transform: skew(-2deg);
+    }
+    100% {
+      -webkit-transform: skew(0);
+      transform: skew(0);
+    }
+  }
+  .hvr-wobble-bottom {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+  }
+  .hvr-wobble-bottom:hover, .hvr-wobble-bottom:focus, .hvr-wobble-bottom:active {
+    -webkit-animation-name: hvr-wobble-bottom;
+    animation-name: hvr-wobble-bottom;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+/* end hover css  */
+
